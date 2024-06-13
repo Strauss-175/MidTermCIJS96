@@ -30,11 +30,14 @@ input {
   padding: 0 0.5%;
 }
 .thumbnailBoard {
- width: 100%;
+  width: 100%;
 }
 .thumbnailPic {
   width: 100%;
   border-radius: 15px;
+}
+.thumbnailText {
+  align-self: baseline;
 }
 main {
   display: flex;

@@ -1,15 +1,20 @@
 import React, { useState } from "react";
-import "./modal.css"
-function Modal({img, description, movieName, episode, index  }) {
+import "./modal.css";
+function Modal({ movieName, description, dataStatus, img }) {
   return (
     <>
-      <div className="movieCard">
-        <section className="subMovieCard">
-          <p className="episode">Episode {episode}</p>
-          <img src={img} className="cardImg" />
-        </section>
-        <h3 id={index + "name"}>{movieName}</h3>
-        <p id={index + "description"}>{description}</p>
+      <div className="modal">
+        <div className="body">
+          <div className="innerModal">
+            <img src={img} className="pic" />
+            <div className="mainContent">
+            <h3>{movieName}</h3>
+            <p>{description}</p>
+            <button onClick={dataStatus} style={{ color: "white" }}>
+              Close
+            </button></div>
+          </div>
+        </div>
       </div>
     </>
   );

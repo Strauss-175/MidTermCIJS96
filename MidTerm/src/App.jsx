@@ -5,9 +5,9 @@ import { BaseData } from "./data/data";
 import "./App.css";
 import Card from "./components/Card";
 function App() {
- 
   return (
     <>
+      {/* H   E   A   D   E   R */}
       <section className="header">
         <div className="title">
           <h1>Anonime</h1>
@@ -21,11 +21,9 @@ function App() {
         <p style={{ color: "#868686" }}>What are you gonna watch today?</p>
       </div>
       <section className="thumbnailBoard">
-        <img src="/pics/thumbnail.jpg" className="thumbnailPic" />
-        <h1></h1>
-        <p></p>
+        <img src="/pics/carousel.png" className="thumbnailPic" />
       </section>
-      <h2>New Release</h2>
+      <h2 className="thumbnailText">New Release</h2>
       <main>
         {BaseData.map((item, index) => {
           return (
@@ -36,7 +34,6 @@ function App() {
               img={item.image}
               description={item.description}
               episode={item.episode}
-
             />
           );
         })}
