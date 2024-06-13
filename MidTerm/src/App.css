@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+#root {
+  width: 95vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.header {
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+input {
+  width: 20%;
+  height: 40%;
+  border: none;
+  border-radius: 15px;
+  background-color: #37414f;
+  padding: 0 0.5%;
+}
+.thumbnailBoard {
+  position: relative;
+}
+.thumbnailPic {
+  width: 100%;
+}
+main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
