@@ -1,19 +1,1 @@
-.movieCard {
-  width: 12vw;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-.subMovieCard {
-  display: flex;
-  flex-flow: column;
-  flex-direction: column-reverse;
-  align-items: center;
 
-}
-img {
-  width: 100%;
-}
-.episode {
-  position: absolute;
-}

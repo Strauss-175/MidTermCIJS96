@@ -5,8 +5,7 @@ import { BaseData } from "./data/data";
 import "./App.css";
 import Card from "./components/Card";
 function App() {
-  const [count, setCount] = useState(0);
-
+ 
   return (
     <>
       <section className="header">
@@ -17,12 +16,14 @@ function App() {
         </div>
         <input type="text" placeholder="Search anime or movie" />
       </section>
+      <div className="thumbnailText">
+        <h2>Explore</h2>
+        <p style={{ color: "#868686" }}>What are you gonna watch today?</p>
+      </div>
       <section className="thumbnailBoard">
-        <div className="thumbnailText">
-          <h2>Explore</h2>
-          <p style={{ color: "#868686" }}>What are you gonna watch today?</p>
-        </div>
-       <img src="/pics/thumbnail.jpg" className="thumbnailPic"/>
+        <img src="/pics/thumbnail.jpg" className="thumbnailPic" />
+        <h1></h1>
+        <p></p>
       </section>
       <h2>New Release</h2>
       <main>
@@ -30,10 +31,12 @@ function App() {
           return (
             <Card
               key={index}
-              moviewName={item.movieName}
+              index={index}
+              movieName={item.movieName}
               img={item.image}
               description={item.description}
               episode={item.episode}
+
             />
           );
         })}

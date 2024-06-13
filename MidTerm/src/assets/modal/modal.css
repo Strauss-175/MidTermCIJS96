@@ -1,0 +1,23 @@
+.movieCard {
+    width: 14vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  .subMovieCard {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column-reverse;
+    align-items: center;
+      
+  }
+  .cardImg {
+    width: 14vw;
+    aspect-ratio: 0.7;
+  
+  }
+  .episode {
+    position: absolute;
+    
+  }

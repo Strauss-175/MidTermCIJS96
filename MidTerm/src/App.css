@@ -3,7 +3,7 @@ body {
   justify-content: center;
 }
 #root {
-  width: 95vw;
+  width: 90vw;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -30,10 +30,11 @@ input {
   padding: 0 0.5%;
 }
 .thumbnailBoard {
-  position: relative;
+ width: 100%;
 }
 .thumbnailPic {
   width: 100%;
+  border-radius: 15px;
 }
 main {
   display: flex;
